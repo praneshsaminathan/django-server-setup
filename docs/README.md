@@ -51,7 +51,7 @@ sudo apt-get install postgresql postgresql-contrib
 sudo rm /etc/nginx/sites-enabled/default
 sudo vim /etc/nginx/sites-available/user_django_project_name_nginx.conf 
 ```
-Copy the [user_django_project_name_nginx.conf](https://github.com/praneshsaminathan/django-ubuntu-setup/blob/master/configs/user_django_project_name_nginx.conf) file
+Copy the [user_django_project_name_nginx.conf](https://github.com/praneshsaminathan/django-server-setup/blob/master/configs/user_django_project_name_nginx.conf) file
 ```
 sudo ln -s /etc/nginx/sites-available/user_django_project_name_nginx.conf /etc/nginx/sites-enabled/user_django_project_name_nginx.conf
 sudo service nginx configtest
@@ -63,7 +63,7 @@ sudo service nginx restart
 sudo chown apps:www-data -R /var/log/uwsgi
 sudo vim /etc/uwsgi/apps-available/user_django_project_name_uwsgi.ini
 ```
-Copy the [user_django_project_name_uwsgi.ini](https://github.com/praneshsaminathan/django-ubuntu-setup/blob/master/configs/user_django_project_name_uwsgi.ini) file
+Copy the [user_django_project_name_uwsgi.ini](https://github.com/praneshsaminathan/django-server-setup/blob/master/configs/user_django_project_name_uwsgi.ini) file
 ```
 sudo ln -s /etc/uwsgi/apps-available/user_django_project_name_uwsgi.ini /etc/uwsgi/apps-enabled/user_django_project_name_uwsgi.ini
 ```
